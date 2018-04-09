@@ -1,0 +1,26 @@
+<main role="main" class="container">
+    <div class="px-1 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Instagram Stats</h1>
+    </div>
+    <div class="mx-auto">
+        <div class="row mb-4">
+            <form class="form-inline" (ngSubmit)="getInfo(profile.value)">
+                <div class="form-group">
+                    <label for="inputText1">Nome utente</label>
+                    <input #profile type="text" id="inputText1" class="form-control mx-sm-3">
+                </div>
+                <button class="btn btn-primary">Calcola</button>
+            </form>
+        </div>
+
+        <div class="row">
+            
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Follower</h5>
+                    <p class="card-text">{{follower}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
