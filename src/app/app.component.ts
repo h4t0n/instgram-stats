@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   title = 'ProfileStats';
-  private follower: number;
+  follower: number;
 
   constructor(private http: HttpClient) {  this.follower = 0;}
 
